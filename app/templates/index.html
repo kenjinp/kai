@@ -22,7 +22,7 @@
 				<!--<li><a href="#" accesskey="1" title="">Homepage</a></li>-->
 				<li><a href="#wrapper3" accesskey="2" title="Projects">Past Projects</a></li>
 				<li><a href="#wrapper4" accesskey="1" title="Pricing">Pricing</a></li>
-				<li class="current_page_item"><a href="#" accesskey="3" title="">Get Translated</a></li>
+				<li class="current_page_item"><a href="{{ url_for('order') }}" accesskey="3" title="">Get Translated</a></li>
 				<li><a href="#" accesskey="4" title="About">About</a></li>
 				<li><a href="#" accesskey="5" title="Contact">Contact</a></li>
 			</ul>
@@ -33,16 +33,25 @@
 <!--this is the welcom/intro slice-->
 <div id="wrapper2">
 	<div id="welcome" class="container">
+		{% with message = get_flashed_messages() %}
+		{% if messages %}
+		<ul>
+		{% for message in messages %}
+			<li class="current_page_item">{{ message }} </li>
+		{% endfor %}
+		</ul>
+		{% endif %}
+		{% endwith %}
 		<div class="title">
 			<h2>Get Yourself Understood</h2>
 		</div>
-		<p>This is <strong>{{title}}</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+	
+		<p>This is <strong>{{title}}</strong>, an easy to use translation portal with per-word pricing. Maybe something fun and insightful will go here, but probably, most likely, it won't.</p>
 	</div>
 </div>
-
 <!--This is the Projects slice-->
 <div id="wrapper3">
-<div id="three-column" class="container">
+<!--<div id="three-column" class="container">
 	<div><span class="arrow-down"></span></div>
 	<div id="tbox1"> <span class="icon icon-wrench"></span>
 		<div class="title">
@@ -92,9 +101,9 @@
 		</div>
 	</div>
 </div>
-
+-->
 <!--This will be the translation form place.-->
-<div id="wrapper4">
+<!--<div id="wrapper4">
 	<div id="footer" class="container">
 		<div>
 			{% include 'trans_form.html' %}
@@ -111,6 +120,7 @@
 		</div>
 	</div>
 </div>
+-->
 <div id="copyright" class="container">
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
