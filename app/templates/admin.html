@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="2" style="width:300px">
+{% for order in orders %}
+	<tr>
+		<td>
+			<b>{{order.id}}</b> | <a href="{{url_for('orderid',  translation_id = order.id) }}">{{order.title}}</a>
+		</td>
+	</tr>
+{% endfor %}
+</table>
+{% endblock %}

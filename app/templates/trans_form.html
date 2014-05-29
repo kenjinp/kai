@@ -1,0 +1,22 @@
+<h1> Please Enter What You Want Translated </h2>
+<form action="" method="post" name="translate-form">
+	{{form.hidden_tag()}}
+
+	<p>{% for error in form.errors.email_form %}
+	<span style="color: red;">[{{error}}]</span>
+	{% endfor %}</p>
+	<table border="2">
+		<tr>
+			<td>Put a title on your Translation:</td>
+			<td>{{form.title_form(size = 60)}}</td>
+		</tr>
+		<tr>
+			<td>Some Text</td>
+			<td>{{form.to_be_translated(cols = 32, rows = 4)}}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Submit Translation"></td>
+		</tr>
+	</table>
+</form>

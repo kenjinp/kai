@@ -1,0 +1,9 @@
+Hello Friend, 
+
+{{submission.title}} has been sent for translation!
+
+Check it out here: {{url_for('orderid', translation_id = submission.id, _external = True)}}
+
+Regards, 
+
+Silly Coffee
