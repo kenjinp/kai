@@ -37,19 +37,20 @@ def index():
 
 #orderform view
 @app.route('/order-translation', methods = ['GET', 'POST'])
+@login_required
 def order():
         form = TranslationForm()
         if form.validate_on_submit():
                 translation = Order(text = form.to_be_translated.data,
                         timestamp = datetime.utcnow(),
-                        email = form.email_form.data,
-                        title = form.title_form.data
+                        title = form.title_form.data,
+                        user_id = g.user.id
                         )
                 print translation.title
                 print translation.text
                 db.session.add(translation)
                 db.session.commit()
-                translation_submit_notification(translation)
+                translation_submit_notification(translation, g.user.email)
                 return redirect(url_for("quote", translation_id = translation.id))
         else:
                 print "do something else"
@@ -76,16 +77,19 @@ def quote(translation_id):
 @app.route('/orderid/<translation_id>')
 def orderid(translation_id):
         order = Order.query.filter_by(id=translation_id).first()
+        orderer = User.query.filter_by(id=order.user_id).first()
         print order.title
         return render_template("orderid.html",
-                order = order)
+                order = order,
+                orderer = orderer)
 
 #view to see all the orders someone has (admin can see all)
 @app.route('/admin', methods = ['GET', 'POST'])
 def admin():
         print "made it to login page"
         orders = Order.query.all()
-        return render_template("admin.html", orders = orders)
+        users = User.query.all()
+        return render_template("admin.html", orders = orders, users = users)
 
 @app.route('/signup', methods = ['GET', 'POST'])
 def signup():
