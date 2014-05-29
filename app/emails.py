@@ -16,13 +16,13 @@ def send_email(subject, sender, recipients, text_body, html_body):
         msg.html = html_body
         send_async_email(msg)
 
-def translation_submit_notification(submission, email):
+def translation_submit_notification(email):
+        recipients = []
+        recipients.append(email)
         print "notification email sent?"
-        send_email("[Silly Coffee] we're working on it!",
+        send_email("Silly Coffee we're working on it!",
                 ADMINS[0],
-                email,
-                render_template("translation_submit_notification.txt",
-                        submission = submission),
-                render_template("translation_submit_notification.html",
-                        submission = submission))
+                recipients,
+                render_template("translation_submit_notification.txt"),
+                render_template("translation_submit_notification.html"))
 

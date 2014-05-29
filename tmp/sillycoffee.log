@@ -1,0 +1,44 @@
+2014-05-29 13:32:34,438 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 13:39:25,615 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 13:39:33,632 ERROR: Exception on /order-translation [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 53, in order
+    translation_submit_notification(g.user.email)
+TypeError: translation_submit_notification() takes exactly 3 arguments (1 given)
+2014-05-29 13:40:00,019 ERROR: Exception on /order-translation [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 53, in order
+    translation_submit_notification(g.user.email)
+TypeError: translation_submit_notification() takes exactly 3 arguments (1 given)
+2014-05-29 13:40:05,064 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 13:44:48,604 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 13:51:56,746 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 13:55:00,969 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 13:57:03,172 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 14:00:58,337 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 14:09:33,961 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-05-29 14:12:55,383 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]

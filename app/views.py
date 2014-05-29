@@ -50,7 +50,7 @@ def order():
                 print translation.text
                 db.session.add(translation)
                 db.session.commit()
-                translation_submit_notification(translation, g.user.email)
+                translation_submit_notification(g.user.email)
                 return redirect(url_for("quote", translation_id = translation.id))
         else:
                 print "do something else"
