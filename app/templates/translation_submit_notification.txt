@@ -2,7 +2,7 @@ Hello Friend,
 
 Your Project has been sent for translation!
 
-Check it out here: {{url_for('index')}}
+Check it out here: {{url_for('index', _external = True)}}
 
 Regards, 
 

@@ -1,8 +1,11 @@
 from app import db
 from werkzeug import generate_password_hash, check_password_hash
 
+#USER STUFF
+
 ROLE_USER = 0
 ROLE_ADMIN = 1
+ROLE_TRANSLATOR = 2
 
 class User(db.Model):
         id = db.Column(db.Integer, primary_key = True)
@@ -26,7 +29,7 @@ class User(db.Model):
                 return unicode(self.id)
 
         def __repr__(self):
-                return '<user %>' % (self.email)
+                return '<user %r>'%(self.email)
 
         def set_password(self, password):
                 self.pwdhash = generate_password_hash(password)
@@ -46,6 +49,12 @@ class User(db.Model):
                         version += 1
                 return new_nickname
 
+#TRANSLATIO ORDER STUFF
+
+STATUS_PENDING = 0
+STATUS_AWAITING_APPROVAL = 1
+STATUS_COMPLETED = 2
+
 class Order(db.Model):
         id = db.Column(db.Integer, primary_key = True)
         title = db.Column(db.String(64), index = True)
@@ -53,6 +62,7 @@ class Order(db.Model):
         price = db.Column(db.Float)
         timestamp = db.Column(db.DateTime)
         user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+        status = db.Column(db.SmallInteger, default = STATUS_PENDING)
 
         def __repr__(self):
                 return '<Order %r>' % (self.id)

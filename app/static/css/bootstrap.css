@@ -223,11 +223,16 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #DBA37F url(../img/overlay.png) repeat;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #E6CF9C;
+}
+
+.header-wrapper {
+  background: #DBA37F;
 }
 
 a {
@@ -235,10 +240,17 @@ a {
   text-decoration: none;
 }
 
+
+
 a:hover,
 a:focus {
   color: #005580;
   text-decoration: underline;
+}
+
+.logo {
+    padding: 5em 0em;
+    text-align: center;
 }
 
 .img-rounded {
@@ -836,6 +848,8 @@ ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
+  text-align: center;
+
 }
 
 ul.inline > li,
@@ -1894,6 +1908,16 @@ input.search-query {
   margin-bottom: 0;
   vertical-align: middle;
   *zoom: 1;
+
+}
+
+.form-n33 textarea {
+width: 100%;
+border: 0;
+background: #f1f1f1;
+padding: 0.75em;
+box-shadow: inset 0 2px 0 0 #dcdcdc;
+border-radius: 0.25em;
 }
 
 .form-search .hide,

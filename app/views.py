@@ -29,11 +29,18 @@ def load_user(id):
 @app.route('/index', methods = ['GET', 'POST'])
 def index():
         user = g.user
-        form = TranslationForm()
-        return render_template("index.html",
-		title = maintitle,
-                form = form
-		)
+        if user.is_authenticated():
+                if user.role == ROLE_ADMIN:
+                        orders = Order.query.all()
+                else:
+                        orders = user.orders
+                return render_template("admin.html", orders = orders)
+        else:
+                form = TranslationForm()
+                return render_template("index.html",
+		        title = maintitle,
+                        form = form
+		        )
 
 #orderform view
 @app.route('/order-translation', methods = ['GET', 'POST'])
@@ -86,19 +93,12 @@ def orderid(translation_id):
 #view to see all the orders someone has (admin can see all)
 @app.route('/admin', methods = ['GET', 'POST'])
 def admin():
-        print "made it to login page"
-        orders = Order.query.all()
-        users = User.query.all()
-        return render_template("admin.html", orders = orders, users = users)
+        pass
 
 @app.route('/signup', methods = ['GET', 'POST'])
 def signup():
         form = SignupForm()
         if form.validate_on_submit():
-                if form.password.data != form.verify_password.data:
-                        flash('Passwords don\t match!')
-                        return redirect(url_for("signup"))
-                        print 'user passwords dont mach'
                 password = form.password.data
                 print 'password is %r'%password
                 print 'signupformvalidated'

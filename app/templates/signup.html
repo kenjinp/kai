@@ -3,18 +3,34 @@
 <form action="" method="post" name="signupform">
 	{{form.hidden_tag()}}
 
-	<p>{% for error in form.errors %}
-	<span style="color: red;">[{{error}}]</span>
-	{% endfor %}</p>
-	
-	<h2>{{form.nickname.label}}</h2>
+	<h2>{{form.nickname.label}}
+	{% for error in form.errors.nickname %}
+	<span style="color: red;">{{error}}</span>
+	{% endfor %}
+	</h2>
 	{{ form.nickname(size = 30) }}<br>
-	<h2>{{form.email.label}}</h2>
+	
+	<h2>{{form.email.label}}
+	{% for error in form.errors.email %}
+	<span style="color: red;">{{error}}</span>
+	{% endfor %}
+	</h2>
 	{{ form.email(size = 30) }}<br>
-	<h2>{{form.password.label}}</h2>
+	
+	<h2>{{form.password.label}}
+	{% for error in form.errors.password %}
+	<span style="color: red;">{{error}}</span>
+	{% endfor %}
+	</h2>
 	{{ form.password(size = 30) }}<br>
-	<h2>{{ form.verify_password.label }}</h2>
+	
+	<h2>{{ form.verify_password.label }}
+	{% for error in form.errors.verify_password %}
+	<span style="color: red;">{{error}}</span>
+	{% endfor %}
+	</h2>
 	{{ form.verify_password(size = 30) }}<br>
+
 	{{ form.submit }}
 </form>
 <p><a href="login/li">Signup with Linkedin!</a></p>

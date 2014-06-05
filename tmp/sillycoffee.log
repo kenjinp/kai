@@ -42,3 +42,496 @@ TypeError: translation_submit_notification() takes exactly 3 arguments (1 given)
 2014-05-29 14:00:58,337 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
 2014-05-29 14:09:33,961 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
 2014-05-29 14:12:55,383 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:38:13,419 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:38:37,140 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:39:32,414 ERROR: Exception on /signup [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 96, in signup
+    form = SignupForm()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/wtforms/form.py", line 178, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 23, in __init__
+    self.original_nickname = original_nickname
+NameError: global name 'original_nickname' is not defined
+2014-06-02 18:40:19,509 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:40:43,659 ERROR: Exception on /signup [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 97, in signup
+    if form.validate_on_submit():
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_wtf/form.py", line 156, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 25, in validate
+    if not Form.validate(self):
+NameError: global name 'self' is not defined
+2014-06-02 18:41:16,001 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:41:46,100 ERROR: Exception on /signup [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 97, in signup
+    if form.validate_on_submit():
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_wtf/form.py", line 156, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 30, in validate
+    user = User.query.filter_by(nickname = self.nickname.data).first()
+NameError: global name 'User' is not defined
+2014-06-02 18:42:15,815 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:42:21,103 ERROR: Exception on /signup [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 97, in signup
+    if form.validate_on_submit():
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_wtf/form.py", line 156, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 30, in validate
+    user = User.query.filter_by(nickname = self.nickname.data).first()
+NameError: global name 'User' is not defined
+2014-06-02 18:43:19,209 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:43:34,078 ERROR: Exception on /signup [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 97, in signup
+    if form.validate_on_submit():
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_wtf/form.py", line 156, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 34, in validate
+    user_email = User.query.flter_by(email = self.email.data).first()
+AttributeError: 'BaseQuery' object has no attribute 'flter_by'
+2014-06-02 18:43:53,603 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:57:34,740 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:57:42,666 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:57:57,403 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:58:03,342 ERROR: Exception on /signup [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 116, in signup
+    return render_template("signup.html", form = form)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/signup.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/base.html", line 52, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/signup.html", line 28, in block "content"
+    {% for error in forms.errors.verify_password %}
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'forms' is undefined
+2014-06-02 18:59:03,439 ERROR: Exception on /signup [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 97, in signup
+    if form.validate_on_submit():
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_wtf/form.py", line 156, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 27, in validate
+    if self.password.data.length() <= 7:
+AttributeError: 'unicode' object has no attribute 'length'
+2014-06-02 18:59:42,022 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 18:59:47,782 ERROR: Exception on /signup [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 97, in signup
+    if form.validate_on_submit():
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask_wtf/form.py", line 156, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 27, in validate
+    if string(self.password.data.length).length() <= 7:
+NameError: global name 'string' is not defined
+2014-06-02 19:01:27,616 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 19:28:21,758 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 19:28:52,739 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 22:50:17,825 INFO: silly coffee startup [in app/__init__.py:41]
+2014-06-02 22:51:21,420 INFO: silly coffee startup [in app/__init__.py:41]
+2014-06-02 22:55:48,048 INFO: silly coffee startup [in app/__init__.py:41]
+2014-06-02 22:56:57,916 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 22:57:27,896 ERROR: Exception on /login/li [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 148, in auth
+    result = authomatic.login(WerkzeugAdapter(request, response), provider_name)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/core.py", line 1338, in login
+    return provider.login()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/providers/__init__.py", line 85, in wrap
+    func(provider, *args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/providers/oauth2.py", line 325, in login
+    response = self._fetch(*request_elements)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/providers/__init__.py", line 396, in _fetch
+    url=request_path)
+FetchError: Could not connect!
+2014-06-02 22:58:36,280 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-02 22:59:20,910 INFO: silly coffee startup [in app/__init__.py:41]
+2014-06-02 23:00:33,333 INFO: silly coffee startup [in app/__init__.py:41]
+2014-06-02 23:02:15,988 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-02 23:02:27,203 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-02 23:02:31,782 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-02 23:09:59,716 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-03 16:58:43,535 ERROR: Exception on / [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-03 16:58:46,567 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-03 17:00:54,280 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-04 19:49:04,828 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-04 19:49:13,646 ERROR: Exception on / [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-04 19:49:19,157 ERROR: Exception on / [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-04 19:49:29,403 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders, users = users)
+NameError: global name 'users' is not defined
+2014-06-04 19:50:50,988 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 10:34:29,782 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 11:12:28,302 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/admin.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/base.html", line 38, in top-level template code
+    <li><a href="{{url_for('order-translation')}}" accesskey="1" title="Order">Order Translation</a></li>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/werkzeug/routing.py", line 1620, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('order-translation', {}, None)
+2014-06-05 11:12:33,678 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 37, in index
+    return render_template("admin.html", orders = orders)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/admin.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/base.html", line 38, in top-level template code
+    <li><a href="{{url_for('order-translation')}}" accesskey="1" title="Order">Order Translation</a></li>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/werkzeug/routing.py", line 1620, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('order-translation', {}, None)
+2014-06-05 11:47:57,190 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 34, in index
+    orders = Orders.query.all()
+NameError: global name 'Orders' is not defined
+2014-06-05 11:48:06,804 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 34, in index
+    orders = Orders.query.all()
+NameError: global name 'Orders' is not defined
+2014-06-05 11:48:14,089 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 34, in index
+    orders = Orders.query.all()
+NameError: global name 'Orders' is not defined
+2014-06-05 11:49:21,900 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 12:37:25,658 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 12:40:09,751 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
