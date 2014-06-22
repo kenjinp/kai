@@ -1,0 +1,215 @@
+
+/* =Misc */
+
+body {
+	border-top: solid 3px #e7e7e7;
+	font-family: sans-serif;
+	margin: 0px;
+	background: url(../img/overlay1.png);
+
+}
+
+h3{
+	margin-bottom: 30px;
+	margin-top: 0px;
+}
+
+ul{
+	padding-left: 0px;
+}
+
+a{
+	color:#e7e7e7;
+	text-decoration: none;
+}
+
+/* =Head */
+
+.head{
+	position: absolute;
+	top: 0px;
+	margin: 0px;
+	width: 100%;
+	background: white;
+	border-bottom: 2px solid #e7e7e7;
+}
+
+.logo{
+	float:left;
+	padding: 7px;
+	margin: 0px;
+}
+
+.logo a{
+	color:black;
+}
+
+
+.indexnav ul{
+	float:right;
+	margin: 5px;
+	text-transform: lowercase;
+
+}
+.indexnav li{
+	list-style-type: inline;
+	display: inline;
+	margin-left: auto;
+	margin-right: 30px;
+	font-size: 20px;
+}
+
+
+nav a {
+	color: #393F45;
+	text-decoration: none;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	font-size: 0.9em;
+	padding: 10px;
+	margin: 0 0.5em 0 0.5em;
+	border-radius: 0.25em;
+	border: 0;
+	outline: 0;
+}
+	nav a:hover {
+		background: #f1f1f1;
+		box-shadow: 0px 2px 0px 0px #dcdcdc;
+	}
+
+	nav a:active{
+    	box-shadow: none;
+		top: 2px;
+	}
+
+/* =Main */
+
+.main{
+	margin-top: 180px;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.CTAbutton{
+	background: #1E9E87;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 20px;
+	margin: 0 0.5em 0 0.5em;
+	border-radius: 0.25em;
+	outline: 0;
+	box-shadow: 0px 3px 0px 0px #177765;
+}
+	.CTAbutton:hover{
+		background: #26C6A9;
+		box-shadow: 0px 3px 0px 0px #1E9E87;
+	}
+
+	.CTAbutton:active{
+		box-shadow: none;
+		top: 2px;
+	}
+
+.text{
+	color: #393F45;
+}
+
+/* =Footer */
+
+.footer{
+	position: absolute;
+	bottom: 0px;
+	border-top: 2px solid #CD4C4C;
+	margin:auto;
+	text-align: center;
+	background: #FF5E5E;
+	margin-top: 30px;
+	color: #fff;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.footer a{
+	color:#fff;
+	border-bottom-color: rgba(255,255,255,0.35);
+	border-bottom: dotted 1px #999fa5;
+}
+
+a:hover{
+	border-bottom-color: white;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+.footerbody{
+	width: 60%;
+	margin: auto;
+}
+
+.footer h4{
+	margin-bottom: 0px;
+}
+#QR{
+	margin: auto;
+	background: url(../img/QR.png);
+	width: 150px;
+	height: 150px;
+}
+#QR a{
+	display:none;
+}
+.footer li{
+	display:inline;
+	margin: 20px;
+}
+.copywrite{
+	padding-top: 0px;
+	color:#FF8B8B;
+	border:none;
+}
+.copywrite a{
+	color: white;
+}
+
+/* =Forms */
+.formwrapper{
+	margin: auto;
+	background: white;
+	padding: 20px;
+	max-width: 600px;
+	border-bottom: 2px solid #e7e7e7;
+}
+
+input{
+	background: #f1f1f1;
+	color: #393F45;
+	text-decoration: none;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	font-size: 0.9em;
+	padding: 10px;
+	margin: 0 0.5em 0 0.5em;
+	border-radius: 0.25em;
+	border: 0;
+	outline: 0;
+	border-top: 2px solid #e7e7e7;
+}
+
+#submit{
+	background: #1E9E87;
+	color: #ffffff;
+	border-color: #177765;
+}
+
