@@ -11,6 +11,18 @@ class LoginForm(Form):
         password = PasswordField('Password', validators = [Required()])
         submit = SubmitField("Login!")
 
+        def __init__(self, *args, **kwargs):
+                Form.__init__(self, *args, **kwargs)
+
+        def validate(self):
+                if not Form.validate(self):
+                        return False
+                user = User.query.filter_by(nickname = self.nickname_or_email.data).first()
+                if user is None:
+                        self.nickname_or_email.errors.append('Haven\'t heard of you before')
+                        return False
+                return True
+
 class SignupForm(Form):
         nickname = TextField('Nickname', validators = [Required()])
         email = TextField("Email", validators = [Required()])

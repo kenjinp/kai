@@ -34,7 +34,7 @@ def index():
                         orders = Order.query.all()
                 else:
                         orders = user.orders
-                return render_template("admin.html", orders = orders)
+                return render_template("index.html", orders = orders)
         else:
                 form = TranslationForm()
                 return render_template("index.html",
@@ -141,7 +141,7 @@ def login():
 def auth(provider_name):
         if g.user is not None and g.user.is_authenticated():
                 flash("You're already logged-in, bustah!")
-                return redirect(url_for('index'))
+                return redirect(request.args.get('next') or url_for('index'))
 
         response = make_response()
 

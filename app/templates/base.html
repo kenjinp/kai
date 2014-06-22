@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Head Stuff-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-{% if metatitle %} 
-<title>{{metatitle}}</title>
-{% else %}
-<title>Silly Coffee Translation</title>
-{% endif %}
-<meta name="keywords" content="Chinese to English Translation" />
-<meta name="description" content="{{metadescription}}" />
-<link href="/static/css/bootstrap.css" rel="stylesheet" media="screen">
-<link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="/static/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--[of IE 6]><link href="default_shiity_browser.css" rel="stylesheet" type="text/css" /><endif>-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	{% if metatitle %} 
+	<title>{{metatitle}}</title>
+	{% else %}
+	<title>Silly Coffee Translation</title>
+	{% endif %}
+	<meta name="keywords" content="Chinese to English Translation" />
+	<meta name="description" content="{{metadescription}}" />
+	<link href="/static/css/stylebase.css" rel="stylesheet" media="screen">
+	<!--[of IE 6]><link href="default_shiity_browser.css" rel="stylesheet" type="text/css" /><endif>-->
 </head>
+
 <body>
-<div>
-	<div id="header" class="container-fluid header-wrapper">
-		<div class="logo">
-			{% if title %}
-			<h1><a href="{{url_for('index')}}">{{title}}</a></h1>
-			{% else %}
-			<h1><a href="{{url_for('index')}}">Silly Coffee</a></h1>
-			{% endif %}
-			<span>Tailored Translation by<a href="https://www.linkedin.com/profile/view?id=135530026" rel="nofollow">Kenny</a></span>
-		</div>
-		<div id="menu">
-			<ul class = 'inline'>
-				<li><a href="index/#wrapper3" accesskey="2" title="Projects">Past Projects</a></li>
-				{% if g.user.is_authenticated() %}
-				<li><a href="{{url_for('logout')}}" accesskey="1" title="Logout">Logout</a></li>
-				{% else %}
-				<li><a href="{{url_for('login')}}" accesskey="1" title="Login">Login and Sign-up</a></li>
-				{% endif %}
-				<li><a href="{{url_for('order')}}" accesskey="1" title="Order">Order Translation</a></li>
-				<li><a href="#" accesskey="1" title="">Latest</a></li>
-			</ul>
-		</div>
-		<hr>
-		{% with messages = get_flashed_messages() %}
-		{% if messages %}
-		<ul>
-		{% for message in messages %}
-			<li>{{ message }} </li>
-		{% endfor %}
-		</ul>
-		{% endif %}
-		{% endwith %}
+<!--THIS IS THE NAVBAR and HEADER-->
+	<div class="head">
+		<h1 class = "logo">
+			Silly Coffee
+		</h1>
+		<nav class="indexnav">
+			<ul>
+				<li><a class="selected" href="{{url_for('index')}}">Home</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="{{url_for('login')}}">Login</a></li>
+				<li><a href="#">Latest</a></li>
+		</nav>
 	</div>
-</div>
+
+
+<!--THIS IS THE THE FLASHED MESSAGES PART!--> 
 <div class="container-fluid">
+<div class="alert alert-info">
+
+	{% with messages = get_flashed_messages() %}
+	{% if messages %}
+	<ul>
+	{% for message in messages %}
+		<li class="active">{{ message }} </li>
+	{% endfor %}
+	</ul>
+	{% endif %}
+	{% endwith %}
+</div>
+</div>
+
+<!-- THIS IS THE BLOCK CONTENT-->
+<div class="main">
 {% block content %}{% endblock %}
 </div>
-<div id="copyright" class="container">
-	<p> Some Words | SOME MORE WORDS</p>
-</div>
+
+<!--THIS IS THE FOOTER! -->
+	<div class="footer">
+		<section class="footerbody">
+			<p class="copywrite"><a href="#">Silly Coffee</a> | a translation place</p>
+		</section>	
+
+	</div>
 </body>
 </html>
 

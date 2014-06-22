@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<table border="2" style="width:300px">
+<div class="panel panel-default">
+	<div class="panel-heading">Your Translations</div>
+	<div class="panel-body">
+		<p>Check out your orders and see what's up!</p>
+	</div>
+
+<table class="table table-striped table-bordered">
 {% for order in orders %}
 	<tr>
 		<td>

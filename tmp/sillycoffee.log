@@ -535,3 +535,324 @@ NameError: global name 'Orders' is not defined
 2014-06-05 11:49:21,900 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
 2014-06-05 12:37:25,658 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
 2014-06-05 12:40:09,751 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 18:06:56,519 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 18:07:31,131 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 18:09:20,793 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 18:09:28,262 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 18:10:19,213 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 18:10:24,809 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 18:10:45,109 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 18:26:30,941 ERROR: Exception on /login [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 128, in login
+    if user.check_password(form.password.data) == True:
+AttributeError: 'NoneType' object has no attribute 'check_password'
+2014-06-05 18:27:18,811 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 18:27:22,849 ERROR: Exception on /login [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 124, in login
+    form = LoginForm()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/wtforms/form.py", line 178, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 15, in __init__
+    Form.__init__(self *args, **kwargs)
+TypeError: can't multiply sequence by non-int of type 'LoginForm'
+2014-06-05 18:27:28,552 ERROR: Exception on /login [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 124, in login
+    form = LoginForm()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/wtforms/form.py", line 178, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/forms.py", line 15, in __init__
+    Form.__init__(self *args, **kwargs)
+TypeError: can't multiply sequence by non-int of type 'LoginForm'
+2014-06-05 18:28:08,336 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 20:40:51,072 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-05 20:42:53,084 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-10 10:58:39,279 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-10 11:02:16,953 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-10 11:02:40,990 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-10 11:02:55,906 ERROR: Exception on /order-translation [POST] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 53, in order
+    user_id = g.user.id
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/werkzeug/local.py", line 338, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'id'
+2014-06-10 11:10:43,377 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-10 11:10:59,947 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-12 11:51:43,507 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-12 12:27:52,014 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-12 14:46:05,511 ERROR: Exception on /login/li [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 148, in auth
+    result = authomatic.login(WerkzeugAdapter(request, response), provider_name)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/core.py", line 1338, in login
+    return provider.login()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/providers/__init__.py", line 85, in wrap
+    func(provider, *args, **kwargs)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/providers/oauth2.py", line 325, in login
+    response = self._fetch(*request_elements)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/authomatic/providers/__init__.py", line 396, in _fetch
+    url=request_path)
+FetchError: Could not connect!
+2014-06-20 12:11:21,675 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 13:26:12,769 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 13:28:51,439 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 13:49:45,396 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 13:51:48,093 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 19:49:27,671 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 42, in index
+    form = form
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/index.html", line 25, in top-level template code
+    <h3 class="CTAButton"><a href="{{url_for(order)}}">Get Translated</a></h3>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 268, in url_for
+    if endpoint[:1] == '.':
+UndefinedError: 'order' is undefined
+2014-06-22 19:49:32,746 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 42, in index
+    form = form
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/index.html", line 25, in top-level template code
+    <h3 class="CTAButton"><a href="{{url_for(order)}}">Get Translated</a></h3>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 268, in url_for
+    if endpoint[:1] == '.':
+UndefinedError: 'order' is undefined
+2014-06-22 19:49:45,854 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 42, in index
+    form = form
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/index.html", line 25, in top-level template code
+    <h3 class="CTAButton"><a href="{{url_for(order)}}">Get Translated</a></h3>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 268, in url_for
+    if endpoint[:1] == '.':
+UndefinedError: 'order' is undefined
+2014-06-22 19:50:20,184 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 42, in index
+    form = form
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/index.html", line 25, in top-level template code
+    <h3 class="CTAButton"><a href="{{url_for(order)}}">Get Translated</a></h3>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 268, in url_for
+    if endpoint[:1] == '.':
+UndefinedError: 'order' is undefined
+2014-06-22 19:50:28,473 ERROR: Exception on /index [GET] [in /Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/views.py", line 42, in index
+    form = form
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kennethpirman/Desktop/kai/kai/app/templates/index.html", line 25, in top-level template code
+    <h3 class="CTAButton"><a href="{{url_for(order)}}">Get Translated</a></h3>
+  File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 268, in url_for
+    if endpoint[:1] == '.':
+UndefinedError: 'order' is undefined

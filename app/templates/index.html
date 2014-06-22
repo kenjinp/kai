@@ -1,4 +1,60 @@
-{% extends "base.html" %}
-{% block content %}
-<p>nothing to see here yet</p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>silly coffee | for translations</title>
+	<link href="/static/css/style.css" rel="stylesheet" media="screen"/>
+</head>
+
+<body>
+	<div class="head">
+		<h1 class = "logo">
+			Silly Coffee
+		</h1>
+		<nav class="indexnav">
+			<ul>
+				<li><a class="selected" href="{{url_for('index')}}">Home</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="{{url_for('login')}}">Login</a></li>
+				<li><a href="#">Latest</a></li>
+		</nav>
+	</div>
+
+
+	<div class="main">
+		<h2> Translations @ Warp Speed.</h2>
+		<h3 class="CTAbutton"><a href="{{url_for('order')}}">Get Translated</a></h3>
+		<p class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+		</p>
+		<p class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+		</p>
+		<p class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+		</p>
+	</div>
+
+	<div class="footer">
+		<section class="footerbody">
+			<h3>Hi. I'm Kenny, a translator + developer from <strong>AUS</strong> living in <strong>PEK</strong>.</h3>
+
+			<p>This is where you can get stuff translated by me. If you'd like to see my previous projects, go ahead and <a href="#">click here</a>. But that's not all I'm into: if you're looking for something else go ahead and drop me a line.</p>
+			
+			<h4>Add me on Wechat</h4>
+			
+			<p id="QR"><a>This is where my QR code should go.</a></p>
+
+			<ul class="sharelist">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Weibo</a></li>
+				<li><a href="#">GitHub</a></li>
+				<li><a href="#">eMail</a></li>
+			</ul>
+
+			<p class="copywrite">Design Inspired by <a href="#">n33</a></p>		
+		</section>	
+
+	</div>
+
+</body>
+
