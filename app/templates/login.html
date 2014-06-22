@@ -3,18 +3,17 @@
 <div class="formwrapper">
 	<form action="" method="post" name="loginform">
 		{{form.hidden_tag()}}
-
+		<h2>Login</h2>
+		<h3><a href="{{ url_for('signup') }}">Or SignUP!</a></h3>
 		<p>{% for error in form.errors %}
 		<span style="color: red;">[{{error}}]</span>
 		{% endfor %}</p>
 		
-		<h2>{{form.nickname_or_email.label}}</h2>
-		{{ form.nickname_or_email(size = 30) }}<br>
-		<h2>{{ form.password.label }}</h2>
-		{{ form.password(size = 30) }}<br>
+		{{ form.nickname_or_email(size = 30) }}
+
+		{{ form.password(size = 30) }}
 		{{ form.submit }}
 	</form>
 </div>
 <p><a href="login/li">Login with Linkedin</a></p>
-<h3><a href="{{ url_for('signup') }}">Or SignUP!</a></h3>
 {% endblock %}

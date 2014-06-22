@@ -34,7 +34,7 @@ def index():
                         orders = Order.query.all()
                 else:
                         orders = user.orders
-                return render_template("index.html", orders = orders)
+                return render_template("admin.html", orders = orders)
         else:
                 form = TranslationForm()
                 return render_template("index.html",

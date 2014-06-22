@@ -856,3 +856,6 @@ Traceback (most recent call last):
   File "/Users/kennethpirman/Desktop/kai/kai/kai-env/lib/python2.7/site-packages/flask/helpers.py", line 268, in url_for
     if endpoint[:1] == '.':
 UndefinedError: 'order' is undefined
+2014-06-22 22:43:29,679 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 22:50:02,012 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]
+2014-06-22 22:58:16,852 INFO: silly coffee startup [in /Users/kennethpirman/Desktop/kai/kai/app/__init__.py:41]

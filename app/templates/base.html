@@ -19,13 +19,17 @@
 <!--THIS IS THE NAVBAR and HEADER-->
 	<div class="head">
 		<h1 class = "logo">
-			Silly Coffee
+			<a href="{{url_for('index')}}">Silly Coffee</a>
 		</h1>
 		<nav class="indexnav">
 			<ul>
 				<li><a class="selected" href="{{url_for('index')}}">Home</a></li>
 				<li><a href="#">Pricing</a></li>
+				{% if g.user.is_authenticated() %}
+				<li><a href="{{url_for('logout')}}">Logout</a></li>
+				{% else %}
 				<li><a href="{{url_for('login')}}">Login</a></li>
+				{% endif %}
 				<li><a href="#">Latest</a></li>
 		</nav>
 	</div>
